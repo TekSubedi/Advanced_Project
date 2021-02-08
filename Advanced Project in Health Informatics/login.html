@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+
+    <div id="login_div" class="main-div">
+      <h3>Login To Your Account</h3>
+      <input type="email" placeholder="Email Address" id="email_field" />
+      <input type="password" placeholder="Password" id="password_field" />
+    <button onclick="login()">Login</button>
+    </div>
+  
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDd3T5yM8Afb-NoFUqaohHjJqAq_Xor8zE",
+    authDomain: "group7-3882a.firebaseapp.com",
+    projectId: "group7-3882a",
+    storageBucket: "group7-3882a.appspot.com",
+    messagingSenderId: "50074824103",
+    appId: "1:50074824103:web:c28c3b80d8b1ac8c9f1a82",
+    measurementId: "G-VYLJCX2ZCK"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="login.js"></script>
+
+</body>
